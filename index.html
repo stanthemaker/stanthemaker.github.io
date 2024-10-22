@@ -54,7 +54,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
+    <tr onmouseout="lcos_stop()" onmouseover="lcos_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='lcos_lfp'><video  width=100% height=100% muted autoplay loop>
@@ -64,14 +64,14 @@
           <img src='images/lcos-lfp.png' width="160">
         </div>
         <script type="text/javascript">
-          function cat3d_start() {
+          function lcos_start() {
             document.getElementById('lcos_lfp').style.opacity = "1";
           }
 
-          function cat3d_stop() {
+          function lcos_stop() {
             document.getElementById('lcos_lfp').style.opacity = "0";
           }
-          cat3d_stop()
+          lcos_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
@@ -99,29 +99,26 @@
     </tr>
 
 
-    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+    <tr onmouseout="moire_stop()" onmouseover="moire_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
-          <source src="images/nerfcasting.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/nerfcasting.jpg' width=100%>
+          <div class="two" id='varifocal'><img src='images/varifocal.gif' width="160"></div>
+          <img src='images/varifocal_still.jpg' width="160">
         </div>
         <script type="text/javascript">
-          function nerfcasting_start() {
-            document.getElementById('nerfcasting_image').style.opacity = "1";
+          function moire_start() {
+            document.getElementById('varifocal').style.opacity = "1";
           }
 
-          function nerfcasting_stop() {
-            document.getElementById('nerfcasting_image').style.opacity = "0";
+          function moire_stop() {
+            document.getElementById('varifocal').style.opacity = "0";
           }
-          nerfcasting_stop()
+          moire_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://nerf-casting.github.io/">
-          <span class="papertitle">NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</span>
+        <a>
+          <span class="papertitle">Metalens for edge enhancement</span>
         </a>
         <br>
 				
@@ -146,55 +143,96 @@
     </tr>
 
 
-    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+    <tr onmouseout="curve_stop()" onmouseover="curve_start()"></tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
-          <source src="images/flash_cache.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/flash_cache.jpg' width=100%>
+          <div class="two" id='curve'><img src='images/curve.gif' width="160"></div>
+          <img src='images/curve_still.jpg' width="160">
         </div>
         <script type="text/javascript">
-          function flash_cache_start() {
-            document.getElementById('flash_cache_image').style.opacity = "1";
+          function curve_start() {
+            document.getElementById('curve').style.opacity = "1";
           }
 
-          function flash_cache_stop() {
-            document.getElementById('flash_cache_image').style.opacity = "0";
+          function curve_stop() {
+            document.getElementById('curve').style.opacity = "0";
           }
-          flash_cache_stop()
+          curve_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://benattal.github.io/flash-cache/">
-          <span class="papertitle">Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering</span>
+        <a>
+          <span class="papertitle">Metalens for edge enhancement</span>
         </a>
         <br>
-				<a href="https://benattal.github.io/">Benjamin Attal</a>,
+				
         <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>, <br>
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+				<strong>Jonathan T. Barron</strong>
         <br>
-        <em>ECCV</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <em>SIGGRAPH Asia</em>, 2024
         <br>
-        <a href="https://benattal.github.io/flash-cache/">project page</a>
+        <a href="https://nerf-casting.github.io/">project page</a>
         /
-        <a href="TODO">arXiv</a>
+        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
         <p></p>
         <p>
-          A more physically-accurate inverse rendering system based on radiance caching for recovering geometry, materials, and lighting from RGB images of an object or scene.
+        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
         </p>
       </td>
     </tr>
 
 
+    <tr onmouseout="wave_stop()" onmouseover="wave_start()"></tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='wave'><img src='images/wave.gif' width="160"></div>
+          <img src='images/wave_still.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function wave_start() {
+            document.getElementById('wave').style.opacity = "1";
+          }
+
+          function wave_stop() {
+            document.getElementById('wave').style.opacity = "0";
+          }
+          wave_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a>
+          <span class="papertitle">Metalens for edge enhancement</span>
+        </a>
+        <br>
+				
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+				<strong>Jonathan T. Barron</strong>
+        <br>
+        <em>SIGGRAPH Asia</em>, 2024
+        <br>
+        <a href="https://nerf-casting.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
+        <p></p>
+        <p>
+        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+        </p>
+      </td>
+    </tr>
+
 
     
-
+<!-- 
           </tbody></table>
 
           
@@ -266,6 +304,6 @@
           </tbody></table>
         </td>
       </tr>
-    </table>
+    </table> -->
   </body>
 </html>
