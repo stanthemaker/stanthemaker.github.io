@@ -53,7 +53,6 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
     <tr onmouseout="lcos_stop()" onmouseover="lcos_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -75,23 +74,15 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">LCoS-based Light Field Projector
-</span>
-        </a>
+			<span class="papertitle">LCoS-based Light Field Projector</span>
         <br>
         <strong>Wei-Shan Weng</strong>,
         <a >Ao Yi Sim</a>,
         <a >Chi-Feng Lee</a>, 
-		<a >Homer H. Chen</a>, 
-
+		    <a >Homer H. Chen</a>, 
         <br>
         <em>SPIE AR | VR | MR </em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
         <br>
-        <!-- <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a> -->
-        <p></p>
         <p>
             The proposed LCoS-based light field projector, equipped with an innovative polarization-alternating beam splitter, projects a crosstalk-free light field with a brightness of 500,000 nits.
         </p>
@@ -102,27 +93,26 @@
     <tr onmouseout="moire_stop()" onmouseover="moire_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='varifocal'><img src='images/varifocal.gif' width="160"></div>
+          <!-- <div class="two" id='varifocal'><img src='images/varifocal.gif' width="160"></div> -->
           <img src='images/varifocal_still.jpg' width="160">
         </div>
         <script type="text/javascript">
-          function moire_start() {
-            document.getElementById('varifocal').style.opacity = "1";
-          }
+          // function moire_start() {
+          //   document.getElementById('varifocal').style.opacity = "1";
+          // }
 
-          function moire_stop() {
-            document.getElementById('varifocal').style.opacity = "0";
-          }
-          moire_stop()
+          // function moire_stop() {
+          //   document.getElementById('varifocal').style.opacity = "0";
+          // }
+          // moire_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a>
-          <span class="papertitle">Metalens for edge enhancement</span>
+          <span class="papertitle">Varifocal and Edge Enhancing Metalens</span>
         </a>
         <br>
-				
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <!-- <a href="https://dorverbin.github.io/">Dor Verbin</a>,
         <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
 				<a href="https://phogzone.com/">Peter Hedman</a>,
 				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
@@ -135,101 +125,94 @@
         <a href="https://nerf-casting.github.io/">project page</a>
         /
         <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
-        <p></p>
+        <p></p> -->
         <p>
-        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+          The proposed metalens offers dual functionality—tunable focal length and edge enhancement—by modulating light with two phase functions.
         </p>
       </td>
     </tr>
 
-
-    <tr onmouseout="curve_stop()" onmouseover="curve_start()"></tr>
+    <tr onmouseout="wave_stop()" onmouseover="wave_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='curve'><img src='images/curve.gif' width="160"></div>
-          <img src='images/curve_still.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function curve_start() {
-            document.getElementById('curve').style.opacity = "1";
-          }
-
-          function curve_stop() {
-            document.getElementById('curve').style.opacity = "0";
-          }
-          curve_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a>
-          <span class="papertitle">Metalens for edge enhancement</span>
-        </a>
-        <br>
-				
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
-				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-				<strong>Jonathan T. Barron</strong>
-        <br>
-        <em>SIGGRAPH Asia</em>, 2024
-        <br>
-        <a href="https://nerf-casting.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
-        <p></p>
-        <p>
-        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="wave_stop()" onmouseover="wave_start()"></tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='wave'><img src='images/wave.gif' width="160"></div>
-          <img src='images/wave_still.jpg' width="160">
+        <div id='wave1' class='hidden'><img src="images/wave.gif" width="160" height="160"></div>
+        <div id='wave2'>
+          <a><img src="images/wave_still.jpg" width="160" height="160"></a>
         </div>
         <script type="text/javascript">
           function wave_start() {
-            document.getElementById('wave').style.opacity = "1";
+            document.getElementById('wave1').style.display = 'inline';
+            document.getElementById('wave2').style.display = 'none';
           }
 
           function wave_stop() {
-            document.getElementById('wave').style.opacity = "0";
+            document.getElementById('wave1').style.display = 'none';
+            document.getElementById('wave2').style.display = 'inline';
           }
           wave_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a>
-          <span class="papertitle">Metalens for edge enhancement</span>
+          <span class="papertitle">Physics Informed Neural Network for Ultrasound Imaging</span>
         </a>
         <br>
 				
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <!-- <a href="https://dorverbin.github.io/">Dor Verbin</a>,
         <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
 				<a href="https://phogzone.com/">Peter Hedman</a>,
 				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
 				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>, -->
+        <p>
+          The proposed neural network predicts 2D pressure fields over time by incorporating partial differential equations for acoustic wave propagation into the network’s loss function.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="curve_stop()" onmouseover="curve_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div id='curve1' class='hidden'><img src="images/curve.gif" width="160" height="160"></div>
+        <div id='curve2'>
+          <a ><img src="images/curve_still.jpg" width="160" height="160"></a>
+        </div>
+        <script type="text/javascript">
+          function curve_start() {
+            document.getElementById('curve1').style.display = 'inline';
+            document.getElementById('curve2').style.display = 'none';
+          }
+
+          function curve_stop() {
+            document.getElementById('curve1').style.display = 'none';
+            document.getElementById('curve2').style.display = 'inline';
+          }
+          curve_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a>
+          <span class="papertitle">Auto-focusing for Dual-Modality Imaging System</span>
+        </a>
+        <br>
+<!-- 				
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>, -->
 				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
 				<strong>Jonathan T. Barron</strong>
-        <br>
+        <!-- <br>
         <em>SIGGRAPH Asia</em>, 2024
         <br>
         <a href="https://nerf-casting.github.io/">project page</a>
         /
         <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
-        <p></p>
+        <p></p> -->
         <p>
-        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+        The developed algorithm uses image processing techniques to automatically locate the sample’s position in both axial and lateral directions.
         </p>
       </td>
     </tr>
-
 
     
 <!-- 
